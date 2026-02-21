@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Семь защитников кафедры</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzAwMCIvPjx0ZXh0IHg9IjEwMCIgeT0iMTAwIiBmb250LWZhbWlseT0iVGltZXMgTmV3IFJvbWFuLCBzZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiPkNFRElOQTwvdGV4dD48L3N2Zz4="/>
+</head>
+<body>
+<audio id="film-click" preload="auto" src="https://assets.mixkit.co/sfx/preview/mixkit-old-film-projector-click-1204.mp3"></audio>
+<audio id="film-hum" preload="auto" loop src="https://assets.mixkit.co/sfx/preview/mixkit-old-film-projector-hum-1203.mp3"></audio>
+<audio id="flash-sound" preload="auto" src="https://assets.mixkit.co/sfx/preview/mixkit-camera-flash-click-1133.mp3"></audio>
+
+<div class="film-overlay">
+    <div class="grain"></div>
+    <div class="flicker"></div>
+    <div class="scanlines"></div>
+</div>
+
+<div class="flash-transition"></div>
+
+<section class="hero-video scene" id="intro">
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="video.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <div class="hero-content">
+        <p class="small">Художественно-научный фильм</p>
+        <h1>СЕМЬ ЗАЩИТНИКОВ КАФЕДРЫ</h1>
+        <p class="small">Производство: женский коллектив</p>
+        <p class="dedication">Ко Дню защитника Отечества</p>
+        <div class="scroll-indicator">↓</div>
+    </div>
+</section>
+
+<section class="gallery-section scene" id="gallery">
+    <h2 class="section-title reveal">Главные герои фильма</h2>
+    <div class="cards">
+        <div class="card reveal-left">
+            <div class="photo">
+                <img src="pvi.png" alt="Пименов Виктор Игоревич" onerror="this.src='https://placehold.co/320x400/000000/ffffff?text=Пименов+В.И.'">
+            </div>
+            <div class="caption">
+                <h3>Пименов Виктор Игоревич</h3>
+                <p>Стратег кафедры</p>
+            </div>
+        </div>
+        <div class="card reveal-right">
+            <div class="photo">
+                <img src="neb.png" alt="Небаев Игорь Алексеевич" onerror="this.src='https://placehold.co/320x400/000000/ffffff?text=Небаев+И.А.'">
+            </div>
+            <div class="caption">
+                <h3>Небаев Игорь Алексеевич</h3>
+                <p>Надёжный тыл науки</p>
+            </div>
+        </div>
+        <div class="card reveal-left">
+            <div class="photo">
+                <img src="mesh.png" alt="Мешкомаев Виталий Георгиевич" onerror="this.src='https://placehold.co/320x400/000000/ffffff?text=Мешкомаев+В.Г.'">
+            </div>
+            <div class="caption">
+                <h3>Виталий Георгиевич Мешкомаев</h3>
+                <p>Точность и выдержка</p>
+            </div>
+        </div>
+        <div class="card reveal-right">
+            <div class="photo">
+                <img src="suz.png" alt="Суздалов Евгений Георгиевич" onerror="this.src='https://placehold.co/320x400/000000/ffffff?text=Суздалов+Е.Г.'">
+            </div>
+            <div class="caption">
+                <h3>Евгений Георгиевич Суздалов</h3>
+                <p>Мудрость и фундаментальность</p>
+            </div>
+        </div>
+        <div class="card reveal-left">
+            <div class="photo">
+                <img src="pron.png" alt="Пронькин Руслан Сергеевич" onerror="this.src='https://placehold.co/320x400/000000/ffffff?text=Пронькин+Р.С.'">
+            </div>
+            <div class="caption">
+                <h3>Пронькин Руслан Сергеевич</h3>
+                <p>Энергия и движение вперёд</p>
+            </div>
+        </div>
+        <div class="card reveal-right">
+            <div class="photo">
+                <img src="images/abaev.jpg" alt="Абаев Юсуп Кьюревич" onerror="this.src='https://placehold.co/320x400/000000/ffffff?text=Абаев+Ю.К.'">
+            </div>
+            <div class="caption">
+                <h3>Абаев Юсуп Кьюревич</h3>
+                <p>Надёжность и рост</p>
+            </div>
+        </div>
+        <div class="card reveal-left">
+            <div class="photo">
+                <img src="images/borisenko.jpg" alt="Борисенко Владислав Игоревич" onerror="this.src='https://placehold.co/320x400/000000/ffffff?text=Борисенко+В.И.'">
+            </div>
+            <div class="caption">
+                <h3>Борисенко Владислав Игоревич</h3>
+                <p>Современный подход и амбиции</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="group-photo-section scene" id="group">
+  <h2 class="section-title reveal">Защитники кафедры</h2>
+  <div class="group-grid">
+    <div class="group-item reveal-left">
+      <img src="team1.png" alt="">
+    </div>
+    <div class="group-item reveal">
+      <img src="team2.png" alt="">
+    </div>
+    <div class="group-item reveal-right">
+      <img src="team3.png" alt="">
+    </div>
+     <div class="group-item reveal-right">
+      <img src="team4.png" alt="">
+    </div>
+     <div class="group-item reveal-right">
+      <img src="team5.png" alt="">
+    </div>
+     <div class="group-item reveal-right">
+      <img src="team6.png" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="video-section scene" id="video-block">
+  <h2 class="section-title reveal">На защите кафедры</h2>
+  <div class="video-wrapper reveal">
+    <video controls muted playsinline class="custom-video">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+<section class="wishes-section scene" id="wishes">
+    <div class="reveal">
+        <h2 class="section-title">Пожелания героям фильма</h2>
+        <div class="wish reveal-left">Крепкого здоровья и неиссякаемой энергии.</div>
+        <div class="wish reveal-right">Стратегической выдержки в любых обстоятельствах.</div>
+        <div class="wish reveal-left">Научных побед и блестящих решений.</div>
+        <div class="wish reveal-right">Уважения коллег и благодарных студентов.</div>
+        <div class="wish reveal">Пусть каждый день будет уверенным шагом вперёд.</div>
+    </div>
+     <div class="side-label">
+        <br><br><br>
+        <h1>В ФИЛЬМЕ СНИМАЛИСЬ:</h1>
+    </div>
+</section>
+
+<section class="credits-section scene" id="final">
+       <div class="credits-wrapper">
+        <div class="credits-scroll">
+            <p>Пименов Виктор Игоревич</p>
+            <p>Небаев Игорь Алексеевич</p>
+            <p>Виталий Георгиевич Мешкомаев</p>
+            <p>Евгений Георгиевич Суздалов</p>
+            <p>Пронькин Руслан Сергеевич</p>
+            <p>Абаев Юсуп Кьюревич</p>
+            <p>Борисенко Владислав Игоревич</p><br><br>
+            <p>Режиссёр: Женский коллектив</p>
+            <p>Продюсер: Искусственный интеллект</p><br><br>
+            <p>С Днём защитника Отечества!</p>
+            <p>2026 год</p>
+        </div>
+        <div class="credits-scroll clone"></div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
