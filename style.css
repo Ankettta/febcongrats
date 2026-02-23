@@ -1,8 +1,10 @@
 body {
     margin: 0;
-    background: #000;
+    background: #1a1a1a;
+    /* Было #000 → стало светлее */
     font-family: 'Times New Roman', serif;
-    color: #f5f5f5;
+    color: #f8f8f8;
+    /* Было #f5f5f5 → чуть светлее текст */
     overflow-x: hidden;
     line-height: 1.4;
 }
@@ -50,7 +52,7 @@ section {
     position: absolute;
     inset: 0;
     background: white;
-    opacity: 0.03;
+    opacity: 0.05;
     animation: flicker 0.12s infinite alternate;
 }
 
@@ -93,7 +95,7 @@ section {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle, transparent 60%, rgba(0, 0, 0, 0.85) 100%);
+    background: radial-gradient(circle, transparent 60%, rgba(0, 0, 0, 0.5));
 }
 
 .hero-video {
@@ -115,13 +117,13 @@ section {
     min-height: 100%;
     transform: translate(-50%, -50%);
     object-fit: cover;
-    filter: grayscale(100%) contrast(120%) brightness(60%);
+    filter: grayscale(100%) contrast(110%) brightness(75%);
 }
 
 .video-overlay {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle, transparent 40%, rgba(0, 0, 0, 0.9));
+    background: radial-gradient(circle, transparent 40%, rgba(0, 0, 0, 0.75));
     z-index: 1;
 }
 
@@ -293,12 +295,12 @@ section {
     height: 100%;
     object-fit: cover;
     display: block;
-    filter: grayscale(100%) contrast(120%) brightness(90%);
+    /* filter: grayscale(100%) contrast(115%) brightness(97%); */
     transition: 0.8s ease;
 }
 
 .card:hover img {
-    filter: grayscale(100%) contrast(150%) brightness(110%);
+    /* filter: grayscale(100%) contrast(150%) brightness(110%); */
 }
 
 .card:hover::before {
@@ -406,7 +408,7 @@ section::before {
 
 .wishes-section {
     text-align: center;
-    background: radial-gradient(circle, #111 0%, #000 100%);
+    background: radial-gradient(circle, #222 0%, #1a1a1a 100%);
 }
 
 .wish {
@@ -503,7 +505,7 @@ section::before {
 
 .group-photo-section {
     text-align: center;
-    background: radial-gradient(circle, #111, #000);
+    /* background: radial-gradient(circle, #222, #1a1a1a); */
     padding: 80px 10%;
     min-height: auto;
 }
@@ -526,7 +528,7 @@ section::before {
 .group-item img {
     width: 100%;
     display: block;
-    filter: grayscale(1) contrast(1.1) brightness(0.8);
+    /* filter: grayscale(1) contrast(1.1) brightness(0.8); */
     transition: 1s ease;
 }
 
@@ -536,7 +538,7 @@ section::before {
 
 .video-section {
     text-align: center;
-    background: #000;
+    background: #1a1a1a;
     padding: 80px 10%;
     min-height: auto;
 }
